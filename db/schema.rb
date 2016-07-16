@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160716021531) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "ingredients", force: :cascade do |t|
     t.string   "name"
     t.boolean  "fodmap"
