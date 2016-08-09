@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core'
 import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router'
 
-import {HomeComponent} from './home.component'
+import {HomeComponent} from './components/home/home.component'
 
 
 @Component({
