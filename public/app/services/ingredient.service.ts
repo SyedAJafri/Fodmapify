@@ -1,6 +1,7 @@
 import { Injectable }    from 'angular2/core';
 import { Headers, Http } from 'angular2/http';
 import 'rxjs/add/operator/toPromise';
+
 import { Ingredient } from '../types/ingredient.ts';
 
 @Injectable()
@@ -8,6 +9,8 @@ export class IngredientService {
 
     private ingredientsUrl = 'api/ingredients';  // URL to web api
     constructor(private http: Http) { }
+
+    //TODO consider deleting some services
 
     getIngredients() {
         return this.http.get(this.ingredientsUrl)
